@@ -1,0 +1,133 @@
+body {
+    background: ivory;
+    background-image: url("../images/SW-Logo.jpg");
+    background-size: 400px;
+    background-repeat: repeat-x repeat-y;
+    
+}
+
+#wrapper {
+    background: lightcyan;
+    width: 900px;
+    margin: auto;
+    border: 3px solid darkslategray;
+    border-radius: 10px;
+    
+
+
+}
+header {
+    background-image: url("../images/space.webp");
+    background-size: cover;
+    padding: 30px;
+}
+header img{
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+
+                                                
+
+header h1 {
+    display: inline;
+    float: right;
+    font-family: 'Star Wars', sans-serif; /* Use the custom 'Star Wars' font (or any other font you prefer) */
+    font-size: 2.5em; /* Adjust the size as needed */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Make the text all uppercase (optional) */
+    color: white; /* Change text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow to make the text stand out (optional) */
+}
+
+
+nav {
+    background: lightgray;
+    width: 100%;
+    border: 4px solid darkslategrey;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    
+    
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    padding: 10px 30px;
+    
+}
+
+nav a:hover {
+    background: white;
+    text-shadow: 4px 4px 2px darkslategray;
+}
+footer form {
+    background: darkgrey;
+    width: 200px;
+    padding: 15px;
+    border: 3px solid darkslategray;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+section {
+    border: 3px solid darkslategrey;
+    background-color: white;
+    width: 30%;
+    float: left;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    
+}
+
+section img {
+    width: 200px;
+}
+
+table {
+    clear: both;
+
+}
+table.blueTable {
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #EE100B;
+  }
+  table.blueTable thead {
+    background: #565755;
+    background: -moz-linear-gradient(top, #80817f 0%, #676766 66%, #565755 100%);
+    background: -webkit-linear-gradient(top, #80817f 0%, #676766 66%, #565755 100%);
+    background: linear-gradient(to bottom, #80817f 0%, #676766 66%, #565755 100%);
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  table.blueTable tfoot td {
+    font-size: 14px;
+  }
+  table.blueTable tfoot .links {
+    text-align: right;
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }

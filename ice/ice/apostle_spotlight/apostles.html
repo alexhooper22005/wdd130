@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #e8e8e8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+    
+        }
+
+        #wrapper {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 35px;
+            padding: 30px;
+            max-width: 1500px;
+            width: 135%;
+            border: 10px solid black;
+            background-image: url("/ice/ice/apostle_spotlight/images/christus.webp");
+            background-size: cover;
+            
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        .presidency, .apostles {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .person {
+            border: 5px solid white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+
+        .person img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .apostles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            max-width: 600px; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .person:hover {
+            border-color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="wrapper">
+            <h1>First Presidency</h1>
+            <div class="presidency">
+                <div class="person"><img src="images/oaks.webp" alt="oaks"></div>
+                <div class="person"><img src="images/nelson.webp" alt="nelson"></div>
+                <div class="person"><img src="images/eyring.webp" alt="erying"></div>
+            </div>
+
+            <h2>Quorum of the Twelve Apostles</h2>
+            <div class="apostles">
+                <div class="person"><img src="images/holland.webp" alt="holland"></div>
+                <div class="person"><img src="images/uchtdorf.webp" alt="uchtdorf"></div>
+                <div class="person"><img src="images/bednar.webp" alt="bednar"></div>
+                <div class="person"><img src="images/cook.webp" alt="cook"></div>
+                <div class="person"><img src="images/christofferson.webp" alt="christofferson"></div>
+                <div class="person"><img src="images/anderson.webp" alt="anderson"></div>
+                <div class="person"><img src="images/rasband.webp" alt="rasband"></div>
+                <div class="person"><img src="images/stevenson.webp" alt="stevenson"></div>
+                <div class="person"><img src="images/renlund.webp" alt="renlund"></div>
+                <div class="person"><img src="images/gong.webp" alt="gong"></div>
+                <div class="person"><img src="images/soares.webp" alt="soares"></div>
+                <div class="person"><img src="images/kearon.webp" alt="kearon"></div>
+            </div>
+
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

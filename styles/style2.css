@@ -1,0 +1,228 @@
+body {
+    background: ivory;
+    background-image: url("../images/space.webp");
+    background-size: 1200px;
+    
+    
+}
+
+#wrapper {
+    background: lightcyan;
+    max-width: 1200px;
+    margin: auto;
+    border: 3px solid darkslategray;
+    border-radius: 10px;
+    display: grid;
+
+}
+header {
+    background-image: url("../images/bga.jpg");
+    background-size: 900px;
+    background-size: cover;
+    padding: 30px;
+}
+header img{
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+
+                                                
+
+header h1 {
+    display: inline;
+    float: right;
+    font-family: 'Star Wars', sans-serif; 
+    font-size: 2.5em; 
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Make the text all uppercase (optional) */
+    color: white; /* Change text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow to make the text stand out (optional) */
+   
+}
+
+
+nav {
+    background: lightgray;
+    width: 100%;
+    border: 4px solid darkslategrey;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    height: 60px;
+    
+    
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    padding: 10px 30px;
+    
+}
+
+nav a:hover {
+    background: white;
+    text-shadow: 4px 4px 2px darkslategray;
+  
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("../images/starwarsbattle.jpg");
+  background-size: 1000px;
+  background-size: cover;
+}
+
+footer form {
+    background: rgba(254, 20, 20, 0.4);
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px; 
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    color: white;
+    height: 15px;
+    overflow: hidden;
+    transition: height;
+    transition: height .85s ease-in;
+    
+}
+footer form:hover {
+  height: 200px;
+  transition: height .85s ease-out;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color:white;
+  font-size: 1.2em;
+}
+footer form h3 {
+  grid-column: 1 / 3;
+}
+
+footer p {
+  grid-column: 1 / 3;
+  justify-self: center;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+  unicode-bidi: isolate;
+}
+
+section {
+  border: 3px solid darkslategrey;
+  background-color: white;
+  padding: 10px 30px;
+  margin: 10px 15px;
+    
+}
+
+section img {
+    width: 100%;
+
+}
+
+table {
+  grid-column: 1 / 4;
+  
+}
+table.blueTable {
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: lightgrey;
+  }
+  table.blueTable thead {
+    background: #565755;
+    background: -moz-linear-gradient(top, #80817f 0%, #676766 66%, #565755 100%);
+    background: -webkit-linear-gradient(top, #80817f 0%, #676766 66%, #565755 100%);
+    background: linear-gradient(to bottom, #80817f 0%, #676766 66%, #565755 100%);
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  table.blueTable tfoot td {
+    font-size: 14px;
+  }
+  table.blueTable tfoot .links {
+    text-align: right;
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+b4 {
+  color: white
+}
+
+footer p {
+  color: white
+}
+
+table tbody {
+  background-color: white;
+}
+
+@media (max-width: 745px) {
+
+  main {
+    display: block;
+  }
+  table {
+    width: 100%;
+  }
+  header {
+    padding: 0;
+    text-align: center;
+  }
+  header img {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+  }
+  header h1 {
+    font-size: 2em;
+    float: none;
+  }
+  nav {
+    display: block;
+    height: unset;
+  }
+  nav a {
+    width: 100%;
+    justify-content: center;
+    padding: unset;
+    border-bottom: 3px solid darkslategrey;
+  }
+  
+}
+
+.content {
+  background: pink;
+}
