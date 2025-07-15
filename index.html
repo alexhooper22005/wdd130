@@ -12,23 +12,9 @@
     </head>
     <body>
         <div id="wrapper">
-            <header>
-                <img src="images/light saber.webp" alt="Light saber image">
-                <h1>Alex Portal Page </h1>
-                
-                
-                
-                
+            <div id="header">
 
-            </header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="wwr/index.html">WWR</a>
-                <a href="ice/index.html">ICE</a>
-                <a href="about_me/aboutme.html">About Me</a>
-                <a href="client_report.html">Client Report</a>
-
-            </nav>
+            </div>
             <main>
                 <section>
                     <img src="/images/death.jpeg" alt="Death star image">
@@ -62,28 +48,26 @@
                     </tr>
                 </table>
             </main>
-            <footer>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="wwr/index.html">WWR</a></li>
-                    <li><a href="ice/index.html">ICE</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                </ul>
-
-                <b4>Contact</b4>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="messgae">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="sumbit">Send</button>
-                </form>
-                <p>&copy; Alex 2025</p>
-            </footer>
+            <div id="footer"></div>
+            
         </div>
         
-        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('header.html')
+                    .then(responce => responce.text())
+                    .then(data => {
+                        document.getElementById("header").innerHTML = data
+                    });
+            })
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('footer.html')
+                    .then(responce => responce.text())
+                    .then(data => {
+                        document.getElementById("footer").innerHTML = data
+                    });
+            })
+
+        </script>
     </body>
 </html> 
